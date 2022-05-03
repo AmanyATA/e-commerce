@@ -1,13 +1,123 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ .container {
+  padding: 20px;
+
+  border-bottom: 1px solid #e4e4e4;
+} 
+
+@media(max-width: 768px) {
+  h1 {
+      text-align: center;
+      padding: 10px;
+  }
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}
+
+
+  .product-card {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 5px 5px 4px #e4e4e4;
+  position: relative;
+}
+
+
+.product-img { 
+  width: 100%;
+  height: 200px;
+}
+
+
+  img {
+  width: 100%;
+  height: 100%;
+}
+.flag{
+  color: red;
+}
+
+  .product-name {
+  display: block;
+  width: 100%;
+  color: #f57224;
+  margin-top: 5px;
+}
+
+
+  .product {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.products-container .product-card .addcart-btn {
+  background-color: #f57224;
+  color: #fff;
+  border: hidden;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  outline: none;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+
+}
+a{
+  padding: 10px;
+  border: 1px solid #47a7de;
+  color: #47a7de; 
+  
+}
+.pagination_Link {
+  font-weight: bold;
+  
+}
+.pagination_Link--active a{
+  color: rgb(139, 179, 231);
+  background: #47a7de;
+}
+.pagination_Link--disabled a{
+  opacity: 0.0;
+  cursor: default;
 }
