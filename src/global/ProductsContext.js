@@ -17,6 +17,9 @@ export class ProductsContextProvider extends React.Component {
                         currency: change.doc.data().currency,
                         featured:change.doc.data().featured,
                         image: change.doc.data().image,
+                        width:change.doc.data().width,
+                        height:change.doc.data().height,
+                        size:change.doc.data().size,
                         category: change.doc.data().category,
                         alt: change.doc.data().alt,
                         description: change.doc.data().description })}
