@@ -18,7 +18,7 @@ code {
   float: inline-start ;
 
 } 
-button{
+.right-Cart{
   background-color: black;
   color: white;
   width: 175px;
@@ -166,14 +166,8 @@ input[type='checkbox'] {
 .product-card {
   width: 300px;
   height: auto;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 12px;
-  font-weight: 600;
-  position: relative;
+  margin: auto 20px ;
+  display: block;
 }
 .product-img { 
  width: 100%;
@@ -203,17 +197,23 @@ input[type='checkbox'] {
   font-size: small;
 }
 
-.products-container .product-card .addcart-btn {
-  background-color: #f57224;
-  color: #fff;
-  border: hidden;
+ .product-cart{
+   
   cursor: pointer;
-  width: 100%;
-  padding: 10px 14px;
-  margin-top: 5px;
-  margin-bottom: 2px;
-  outline: none;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  height: 100%;
+  font-size: medium;
+  background-color: black;
+  color: white;
+  padding: 10px 10px; 
+  margin-bottom: 10px;
+ 
+  
+  
+} 
 /* ----------------------------------------------------------------------------------------- */
 /* For Pagination */
 .pagination{

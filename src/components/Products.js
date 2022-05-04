@@ -29,7 +29,7 @@ export const Products = () => {
                   {product.name}
 
                 </div>
-                <button>ADD TO CART</button>
+                <button className='right-Cart'>ADD TO CART</button>
                 <br></br>
                 <div className='main-image' >
                   <img src={product.image} alt={product.alt} />
@@ -152,6 +152,10 @@ export const Products = () => {
           <div className='product-card' key={product.id}>
             <div >
               <img className='product-img' src={product.image} alt={product.alt} />
+              <button className='product-cart'>ADD TO CART</button>
+            </div>
+            <div>
+              
             </div>
             <div className='product-category'>
               {product.category}
